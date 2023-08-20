@@ -1,25 +1,30 @@
 public class ClassesAndObjects {
     public static void main(String[] args) {
         Person person = new Person();
-        person.name = "Ihor";
-        person.age = 20;
+        person.setNameAndAge("Ihor", 20);
+
+        String s = "Vova";
         Person person1 = new Person();
-        person1.name = "Vova";
-        person1.age = 19;
-        int year = person.calculateYearsToRetirement();
-        int year1 = person1.calculateYearsToRetirement();
-        System.out.println("Первому человеку до пенсии : " + year);
-        System.out.println("Второму человеку до пенсии : " + year1);
+        person1.setNameAndAge(s, 19);
+
+        person.speak();
+        person1.speak();
     }
 }
 
 class Person {
     // У класса могут быть:
     // 1. Данные (поля)
-    // 2. Действия которые он может совершать (методы)
     String name;
     int age;
+
+    // 2. Действия которые он может совершать (методы)
     // Тип возвращаемого значения метода. int == return
+    void setNameAndAge(String username, int userage){
+        name = username;
+        age = userage;
+    }
+
     int calculateYearsToRetirement() {
         int years = 65 - age;
         return years;
