@@ -1,17 +1,19 @@
+package LessonsF1To27;
+
 public class KeywordThis {
     public static void main(String[] args) {
-//        Human human1 = new Human();
+//        Lessons1To28.Human human1 = new Lessons1To28.Human();
 //        human1.setAge(18);
 //        human1.setName("Tom");
 //        human1.getInfo();
-//        Human human2 = new Human();
+//        Lessons1To28.Human human2 = new Lessons1To28.Human();
 //        human2.setAge(25);
 //        human2.setName("Bob");
 //        human2.getInfo();
     }
 }
 
-//class Human {
+//class Lessons1To28.Human {
 //    String name;
 //    int age;
 //

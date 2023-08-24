@@ -1,4 +1,6 @@
-import Package1.Person;
+package Lesson28;
+
+import Lesson28.Package1.Person;
 
 public class Test extends Person{
     protected int id;

@@ -1,3 +1,5 @@
+package LessonsF1To27;
+
 public class ObjectToString {
     public static void main(String[] args) {
         Human human1 = new Human("Bob", 45);

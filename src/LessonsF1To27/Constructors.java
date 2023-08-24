@@ -1,3 +1,5 @@
+package LessonsF1To27;
+
 public class Constructors {
     public static void main(String[] args) {
         Human1 human1 = new Human1("Bob", 45);
@@ -32,11 +34,11 @@ class Human1 {
     }
 }
 
-//    public Human1() {
+//    public Lessons1To28.Human1() {
 //        this("Bob",12);
 //    }
 //
-//    public Human1(String name) {
+//    public Lessons1To28.Human1(String name) {
 //        System.out.println("Привет из второго конструктора!");
 //        this.name = name;
 //    }

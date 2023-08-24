@@ -1,3 +1,5 @@
+package LessonsF1To27;
+
 public class Arrays {
     public static void main(String[] args) {
 //        char character = 'a';             // Примитивный тип данных

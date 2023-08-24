@@ -1,3 +1,5 @@
+package LessonsF1To27;
+
 public class If {
     public static void main(String[] args) {
         boolean findWork = true;

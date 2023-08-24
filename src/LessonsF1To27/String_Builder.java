@@ -1,3 +1,5 @@
+package LessonsF1To27;
+
 public class String_Builder {
     public static void main(String[] args) {
         System.out.printf("String %.2f \n", 4.523);

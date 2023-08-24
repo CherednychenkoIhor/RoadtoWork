@@ -1,3 +1,5 @@
+package LessonsF1To27;
+
 public class Final {
     public static void main(String[] args) {
         final int X = 10;

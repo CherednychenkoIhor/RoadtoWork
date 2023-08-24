@@ -1,3 +1,5 @@
+package LessonsF1To27;
+
 public class ClassesAndObjects {
     public static void main(String[] args) {
         Person person1 = new Person();

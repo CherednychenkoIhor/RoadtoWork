@@ -1,3 +1,5 @@
+package LessonsF1To27;
+
 public class Multidimensional_arrays {
     public static void main(String[] args) {
         int[][] matrix = {{1, 2, 3, 4, 5},

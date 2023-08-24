@@ -1,3 +1,5 @@
+package LessonsF1To27;
+
 import java.util.Scanner;
 
 public class Input {
