@@ -24,7 +24,8 @@ public class Test {
 
     private static void test(List<? extends Animal> list) {
         for (Animal animal : list) {
-            animal.eat();
+            System.out.println(animal);
+            //            animal.eat();
         }
     }
 }
