@@ -10,9 +10,9 @@ public class Exception4 {
             run();
         } catch (Exception e) {
             e.printStackTrace();
-        } catch (ParseException e) {
-
-        }
+        } //catch (ParseException e) {
+//
+//        }
     }
 
     public static void run() throws IOException, ParseException, IllegalArgumentException {
