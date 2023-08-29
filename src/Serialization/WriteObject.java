@@ -2,24 +2,15 @@ package Serialization;
 
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 
 public class WriteObject {
     public static void main(String[] args) {
-        Person[] people = {new Person(1, "Bob"), new Person(2, "Tom"), new Person(3, "Mike")};
+        Person person1 = new Person(1, "Mike");
 
-        try {
-            FileOutputStream fos = new FileOutputStream("people.bin");
-            ObjectOutputStream oos = new ObjectOutputStream(fos);
-
-            oos.writeObject(people);
-//            oos.writeInt(people.length);
-//
-//            for (Person person : people) {
-//                oos.writeObject(person);
-//            }
-
-            oos.close();
+        try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("people.bin"))){
+            oos.writeObject(person1);
         } catch (IOException e) {
             e.printStackTrace();
         }

@@ -1,14 +1,21 @@
 package Serialization;
 
+import java.io.Serial;
 import java.io.Serializable;
 
-public class Person implements Serializable {
+public class Person implements Serializable{
+
+    @Serial
+    private static final long serialVersionUID = 3839607345071955850L;
+//    private static final long serialVersionUID = -8866102124089028714L; // Сейв от редактирования и чтения
     private int id;
-    private String name;
+    private String personName;
+    private int age;
+    private byte type;
 
     public Person(int id, String name) {
         this.id = id;
-        this.name = name;
+        this.personName = name;
     }
 
     public int getId() {
@@ -16,14 +23,14 @@ public class Person implements Serializable {
     }
 
     public String getName() {
-        return name;
+        return personName;
     }
 
     @Override
     public String toString() {
         return "Person{" +
                 "id=" + id +
-                ", name='" + name + '\'' +
+                ", name='" + personName + '\'' +
                 '}';
     }
 }
